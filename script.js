@@ -78,3 +78,68 @@
 // }
 
 // tekshiruv();
+
+// 2-normativ 1-masala
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+// let res = arr.filter((n)=> n%2===0)
+// console.log(res);
+
+// 2-masala
+
+
+// function hisoblash(n) {
+//   let sum = 0
+//   for (let i = 1; i <= n; i++) {
+//     sum += i
+//   }
+//   return sum
+// }
+
+// const n = n2(prompt("n sonini kiriting:"))
+// const sum2 = hisoblash(n)
+// console.log("1 dan " + n + " gacha bo‘lgan sonlar yig‘indisi: " + natija);
+
+// 3-masala
+
+// function musbatyigindi(array) {
+//   let sum = 0
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0) {
+//       sum += array[i]
+//     }
+//   }
+//   return sum;
+// }
+
+// let sonlar = [7, 5, 2, 6, 9, 4, 12, 3, 11, 18]
+// let natija = musbatyigindi(sonlar)
+
+// console.log("Musbat sonlar yig'indisi:", natija);
+
+// 4-masala
+
+// function 3va5karrali() {
+//   let result = []
+
+//   for (let i = 1; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       result.push(i)
+//     }
+//   }
+
+//   console.log(result.join(" "));
+// }
+
+// // 3va5karrali()
+
+
+// 5-masala
+
+
+let arr = [2, -8, 2, 1, 5, 4, -15, 9, 13];
+
+let engkotta = Math.max(...arr);
+let engkichik = Math.min(...arr);
+
+console.log(`kattasi ${engkotta}, kichigi ${engkichik}`);
