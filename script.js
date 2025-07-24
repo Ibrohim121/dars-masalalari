@@ -137,9 +137,54 @@
 // 5-masala
 
 
-let arr = [2, -8, 2, 1, 5, 4, -15, 9, 13];
+// let arr = [2, -8, 2, 1, 5, 4, -15, 9, 13];
 
-let engkotta = Math.max(...arr);
-let engkichik = Math.min(...arr);
+// let engkotta = Math.max(...arr);
+// let engkichik = Math.min(...arr);
 
-console.log(`kattasi ${engkotta}, kichigi ${engkichik}`);
+// console.log(`kattasi ${engkotta}, kichigi ${engkichik}`);
+
+
+// 1-masala\
+// let num = [3,8,9,7,5]
+// let res = num.at(-1) 
+// let res1 = res ** 2
+// let res2 = num.pop()
+// let res3 = num.unshift(res1)
+// console.log(num)
+
+
+
+// 2- masala
+// let arr = [9, 8, 5, 1, 6, 4]
+// let res = arr.filter((n) => n % 2 === 0)
+// let res1 = res.reduce((acc, cur) => acc + cur)
+// console.log(res1);
+
+
+// 3 chi masala
+
+// let arr = [2, -8, 9, 1, -15, 3, 0, 5]
+// let res = arr.filter((n) => n > 0)
+// let res2 = res.reduce((acc, cur) => acc * cur)
+// console.log(res2);
+
+// 4 chi masala
+
+// let arr = [6, 1, 3, 5, 6, 2, 0, 4]
+// let res = arr.filter((n) => n > 2)
+// console.log(res.map((n) => n * n));
+    
+// 5 chi masala
+
+// let arr = [1, [2, 3], [4, [5, 6, 7]]]
+// let arr2 = arr.flat(2)
+// let res = arr2.filter((n) => n % 2 === 1)
+// console.log(res);
+
+
+
+
+
+
+
