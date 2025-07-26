@@ -184,7 +184,74 @@
 
 
 
+// 1- masala
+// let arr =["jasmina","Muhammadiyor", "Bek","Yusufxon", "Asad", "Jhon"]
+// let res = arr.filter((n) => 5 < n.length)
+// console.log(res);
+
+// 2-masala
+// let arr = [1,2,3,4,5]
+// let max = Math.max(...arr)
+// let min = Math.min(...arr)
+
+// let res = max - min
+// console.log(res);
 
 
+// 3-masala
+// let name = ["seVinCh","ibrohiM","miRKomil","JURABEK","abdulaziz"]
+
+// let res = name.map((n) => n.charAt(0).toUpperCase() + n.slice(1))
+
+
+// console.log(res);
+
+
+
+// 4-masala
+
+
+// let arr = [16, 20, 8, 2, 12, 27, 9, 13];
+// let last = arr[arr.length - 1];
+
+// let res = arr.find(x => x < last) || 0;
+
+// console.log(res);
+
+// 5 chi masala
+
+// let arr1 = [1, 2, 2, 3, 4, 4, 5];
+// let res1 = arr.filter(n => arr.indexOf(n) === arr.lastIndexOf(n));
+
+// console.log(res);
+
+
+// 5 - normativ 
+// 1- masala
+
+// let obj = {
+//     name: "Ibrohim",
+//     age: 16,
+//     country: "Uzbekistan"
+// }
+
+// console.log(obj);
+
+// 2-masala
+
+
+// let obj = {
+//     valyuta: "dollar",
+//     miqdor: 100
+//   };
+//   let kartoshkaNarxi = 2; //1kg ga 
+//   let colaNarxi = 5;      // 1 donaga
+//   let kartoshkaKg = 10;  // necha kg
+//   let colaSoni = 6;      // necha dona
+//   let jamiXarajat = (kartoshkaKg * kartoshkaNarxi) + (colaSoni * colaNarxi);
+//   obj.miqdor = obj.miqdor - jamiXarajat;
+//   console.log(obj); 
+  
+//   3- masala 
 
 
