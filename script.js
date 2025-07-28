@@ -230,10 +230,14 @@
 // 1- masala
 
 // let obj = {
-//     name: "Ibrohim",
-//     age: 16,
-//     country: "Uzbekistan"
+//     name: "Palonchi",
+//     age: 0,
+//     country: "Earth"
 // }
+
+// obj.name = "Ibrohim"
+// obj.age = 16
+// obj.country = "Uzbekistan"
 
 // console.log(obj);
 
@@ -254,4 +258,44 @@
   
 //   3- masala 
 
+// let obj = { Anvar: 19, Salim: 21, Jasur: 13 };
+// let maxName = "";
+// let maxAge = 0;
 
+// for (let name in obj) {
+//   if (obj[name] > maxAge) {
+//     maxAge = obj[name];
+//     maxName = name;
+//   }
+// }
+
+// console.log(`${maxName}: ${maxAge}`); 
+
+// 4-masala
+
+// let obj = { name: "John", age: 22, city: "Tashkent" };
+// let arr = Object.entries(obj);
+
+// arr = arr.map(([key, value]) => {
+//   if (key === "age") return [key, 30];
+//   if (key === "city") return [key, "New York"];
+//   return [key, value];
+// });
+
+// console.log(arr);
+
+// 5-masala
+
+// let obj = { Salim: 60, Ali: 50, Kimsan: 90 };
+// let maxBall = 100; 
+
+// let newObj = {};
+
+// for (let name in obj) {
+//   let percent = (obj[name] / maxBall) * 100;
+//   if (percent >= 60) {
+//     newObj[name] = percent;
+//   }
+// }
+
+// console.log(newObj); 
