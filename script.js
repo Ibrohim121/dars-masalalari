@@ -227,7 +227,7 @@
 
 
 // 5 - normativ 
-// 1- masala
+// 1- masala  
 
 // let obj = {
 //     name: "Palonchi",
@@ -299,3 +299,90 @@
 // }
 
 // console.log(newObj); 
+
+
+
+
+// 6-normativ
+
+// 1-masala
+
+
+// let obj = {
+//     name: "John",
+//     age: 22,
+//     city: "Tashkent",
+//     country: "Uzbekistan",
+//     isMarried: false
+// }
+
+// console.log(Object.keys(obj));
+
+
+// 2-masala
+//     let obj = {
+//         boyi: 15,
+//         eni: 10
+//     }
+//    let res = obj.boyi*obj.eni
+//    console.log( " to'rtburchakni yuzi " ,res , " kvadrat metr");
+
+
+
+// 3-masala
+// let obj = {
+//     soliq: 20,
+//     kamunal: 12,
+//     prava: 980,
+//     havo: 3,
+//     qanchaKotarildi: function(foiz) {
+//         return {
+//             soliq: this.soliq * foiz / 100,
+//             kamunal: this.kamunal * foiz / 100,
+//             prava: this.prava * foiz / 100,
+//             havo: this.havo * foiz / 100
+//         };
+//     }
+// };
+
+// let natija = obj.qanchaKotarildi(15);
+// console.log(natija);
+
+
+
+
+
+// 4-masala
+
+// let obj = {
+//   Salim: 50,
+//   Vali: 87,
+//   Ali: 12,
+//   deleteUser: function(name) {
+//     delete this[name];
+//   }
+// };
+
+// obj.deleteUser("Vali");
+
+// console.log(obj);
+
+// 5-masala
+ 
+// let obj = {
+//   olam: 7,
+//   mandarin: 4,
+//   banan: 6,
+//   apelsin: 1
+// };
+
+// for (let key in obj) {
+//   if (obj[key] % 2 !== 0) {
+//     delete obj[key];
+//   }
+// }
+
+// console.log(obj);
+
+
+
