@@ -384,5 +384,135 @@
 
 // console.log(obj);
 
+// 7-normativ
 
+
+// 1-masala
+// let obj = {Salim: 25, Ali: 7, Malika: 2};
+
+// for (let key in obj) {
+//   obj[key] += 2;
+// }
+
+// console.log(obj);
+
+
+// 2-masala
+// const users = [
+//   { name: "Ali", age: 20 },
+//   { name: "Vali", age: 25 },
+//   { name: "Sami", age: 22 }
+// ];
+
+// for (const user of users) {
+//   console.log(`${user.name} : ${user.age}`);
+// }
+
+
+
+// 3-masala
+// let obj= { a:10, b:"hello",c:5, d:true};
+// let res = Object.entries(obj).filter(([key, value]) => typeof value === 'number');
+// console.log(res);
+
+// 4-masala
+
+// let person = {
+//     name: "Lola",
+//     age: null,
+//    job: "Teacher",
+//    city: null
+// }
+
+// let res = Object.entries(person).filter(([key, value]) => value !== null && value !== undefined);
+// console.log(res);
+
+
+// 5-masala
+// const user = [
+// {
+//     name: "Ali",
+//     age: 17 },
+// {
+//     name: "Vali", 
+//     age: 19 },
+// {
+//     name: "Sami",
+//     age: 21 }
+// ]
+       
+// let res = user.filter((n) => n.age >= 18);
+// console.log(res.map((n) =>  n.name + " " +   n.age));
+
+
+
+
+
+// eski normativ masalalar
+
+
+// 1-masala
+
+// function birinchiTakrorlanganHarf(matn) {
+//   for (let i = 0; i < matn.length; i++) {
+//     let harf = matn[i];
+  
+//     if (matn.indexOf(harf, i + 1) !== -1) {
+//       return harf;
+//     }
+//   }
+//   return null;
+// }
+
+// console.log(birinchiTakrorlanganHarf("javascript")); 
+// console.log(birinchiTakrorlanganHarf("frontend"));   
+// console.log(birinchiTakrorlanganHarf("abcdef"));     
+
+
+// 2-masala
+// function sortByAge(arr) {
+//   return arr.sort((a, b) => a.age - b.age);
+// }
+
+// console.log(sortByAge([{ age: 30 }, { age: 20 }, { age: 40 }]));
+
+// console.log(sortByAge([{ age: 25 }, { age: 22 }, { age: 28 }]));
+
+// console.log(sortByAge([{ age: 50 }, { age: 10 }, { age: 40 }]));
+
+
+// 3-masala
+
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// 4-masala
+// function qiymatIndexiniTop(arr, qiymat) {
+//   const index = arr.indexOf(qiymat);
+//   return index !== -1 ? index : -1;
+// }
+
+// console.log(qiymatIndexiniTop([1, 5, 7, 9], 7));   
+// console.log(qiymatIndexiniTop([10, 20, 30], 15));  
+// console.log(qiymatIndexiniTop([4, 6, 8], 6));      
+
+// 5-masala
+
+// function palindromTekshir(satr) {
+//   const teskari = satr.split('').reverse().join('');
+//   return satr === teskari;
+// }
+
+// console.log(palindromTekshir("madam"));    
+// console.log(palindromTekshir("racecar"));  
+// console.log(palindromTekshir("hello"));    
 
