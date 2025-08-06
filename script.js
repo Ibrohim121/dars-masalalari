@@ -516,3 +516,128 @@
 // console.log(palindromTekshir("racecar"));  
 // console.log(palindromTekshir("hello"));    
 
+// 8- normativ
+
+// 1-masala
+
+// let son1 = 10
+// let son2 = 20
+// let amal = prompt("qaysi amalni qilmoqchisiz  */+-")
+
+// try {
+//     if (amal === "+"){
+//         console.log(son1 + son2)
+//     } else if ( amal === "-") {
+//         console.log(son1-son2);
+        
+//     } else if (amal === "*") {
+//         console.log(son1*son2);
+//         } else if (amal === "/") {
+//             console.log(son1/son2);
+//             } else {
+//                 console.log("Iltimos, quyidagi amallardan birini tanlang: +, -, *, /");
+//                 }
+//                 } catch (error) {
+//                     console.log("Xatolik paydo bo'ldi");
+//                     }
+
+// 2-masala
+    
+
+// const username = " Vali"
+// const email = " textexample.com"
+// const age = 8
+
+// try {
+//     if (username.length < 3) {
+//         throw new Error("foydalanuvchi ismi 3 ta harfdan kam bolmasin");
+//         }
+//         if (email.includes("@")) {
+//             throw new Error("email @ va . belgilari yoq" );
+//             }
+//             if (age < 7) {
+//                 throw new Error("Foydalanuvchi 7 yoshdan kichik ");
+//                 }
+//                 console.log("foydalanuvchi ro'yhatdan o'tdi");
+//                 } catch (error) {
+//                     console.log(error.message); 
+//                 }
+
+
+
+// 3-masala
+// function checkType(value) {
+//   if (Array.isArray(value)) {
+//     console.log(value , "Bu array");
+//   } else if (typeof value === "string") {
+//     console.log(value ,"Bu string");
+//   } else if (typeof value === "number") {
+//     console.log(value ,"Bu number");
+//   } else if (typeof value === "boolean") {
+//     console.log(value ,"Bu boolean");
+//   } else if (typeof value === "object") {
+//     console.log(value ,"Bu object");
+//   } else {
+//     console.log(value ,"Noma'lum tur");
+//   }
+// }
+
+// checkType(5);          
+// checkType([1, 2]);     
+// checkType("Salom");    
+// checkType(true);       
+// checkType({a: 1});     
+
+// 4-masala
+
+// const user = {
+//   name: "Ali",
+//   age: 25,
+//   email: "ali@example.com",
+//   isStudent: true
+// };
+
+// function validateUser(user) {
+//   const errors = [];
+
+  
+//   if (typeof user.name !== "string") {
+//     errors.push("Name string bo'lishi kerak.");
+//   } else if (user.name.length < 3) {
+//     errors.push("Name kamida 3 ta harfdan iborat bo'lishi kerak.");
+//   }
+
+  
+//   if (typeof user.age !== "number") {
+//     errors.push("Age number bo'lishi kerak.");
+//   } else if (user.age < 7) {
+//     errors.push("Age 7 yoki undan katta bolishi kerak.");
+//   }
+
+ 
+//   if (typeof user.email !== "string") {
+//     errors.push("Email string bo'lishi kerak.");
+//   } else if (!user.email.includes("@") || !user.email.includes(".")) {
+//     errors.push("Email '@' va '.' belgilarini oz ichiga olishi kerak.");
+//   }
+
+//   if (typeof user.isStudent !== "boolean") {
+//     errors.push("isStudent boolean tipida bolishi kerak.");
+//   }
+
+//   if (errors.length > 0) {
+//     console.log("Xatoliklar:");
+//     errors.forEach((error) => console.log("- " + error));
+//   } else {
+//     console.log("Foydalanuvchi malumotlari togri!");
+//   }
+// }
+
+// validateUser(user);
+
+
+                
+
+
+
+
