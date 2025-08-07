@@ -636,7 +636,117 @@
 // validateUser(user);
 
 
-                
+// // exam1 
+// 1-masala
+
+// function makeNegative(num) {
+//     if (num > 0 ) {
+//         console.log(-num);
+        
+//     } else {
+//         console.log(num);
+        
+//     }
+// }
+//  makeNegative(5)
+//  makeNegative(-3)
+//  makeNegative(0)
+
+
+//  2-masala
+
+
+// function evenOrOdd(number) {
+//  if (number% 2 == 0) {
+//     console.log("even");
+    
+//  } else {
+//     console.log("Odd");
+    
+//  }
+// }
+
+// evenOrOdd(5)
+// evenOrOdd(4)
+// evenOrOdd(120)
+
+// 3-masala
+
+// function removeChar(str) {
+// let arr= str.split("")
+// let res1 = arr.pop()
+// let res2 =arr.shift()
+// let res3 = arr.join("")
+//     console.log(res3);
+    
+// }
+// removeChar("hello")
+// removeChar("abc")
+// 4-masala
+// function solution(str){
+//  let res = str.split("")
+//  let res2 = res.reverse()
+//  console.log(res2);
+ 
+// }
+// solution("world")
+// 5-masala
+
+// function positiveSum(arr){
+//    let res1= arr.filter((n)=> n > 0);
+//    let res = res1.reduce((a,b)=> a+b);
+//     console.log(res);
+    
+// }
+
+// positiveSum([1,-2, 3,-5,-8,4])
+
+// 6-masala
+// function repeatStr(n , s) {
+//     if (n > 0){
+//        let res =  s.repeat(n);
+//         console.log(res);
+        
+//     } else {
+//         let res2= s.repeat(1)
+//         console.log(res2);
+        
+//     }
+    
+// }
+// repeatStr(3, "ha")
+
+// 7-masala
+
+// function getMiddle(s){
+// if (s.length()%2 ==1 ) {
+//   let res = s.slice(s.length()/2,s.length()/2+1)
+//   console.log(res);
+  
+    
+// } else {
+// console.log(s.slice(1,3));
+ 
+// }
+
+// }
+// getMiddle("test")
+// getMiddle("testing")
+
+// 8-masala
+
+// function findShort(s){
+//  let arr = s.split(" ");
+//  let min = arr[1].length;
+// for (let i = 1; i < arr.length; i++) {
+//  if (arr[i].length < min) {
+//  min = arr[i].length; }
+//  console.log(min);
+            
+// }
+// }
+// findShort(" I Love Javascript Frontend")
+// findShort("Simple and easy tasks")
 
 
 
