@@ -749,5 +749,59 @@
 // findShort("Simple and easy tasks")
 
 
+// 9- normativ
+// 1-masala
 
 
+// function customForEach(array, callback) {
+//   for (let i = 0; i < array.length; i++) {
+//     callback(array[i], i, array);
+//   }
+// }
+// const fruits = ['apple', 'banana', 'cherry'];
+// customForEach(fruits, function(element, index, array) {
+//   console.log(`Element at index ${index} is ${element}`);
+// });
+
+
+// 2-masala
+// function customFind(array, callback) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (callback(array[i], i, array)) {
+//       return array[i];
+//     }
+//   }
+//   return undefined; 
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// const result = customFind(numbers, (num) => num > 3);
+// console.log(result); 
+
+// // 3-masala
+// customSome()
+// Array.prototype.customSome = function(callback) {
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       return true;
+//     }
+//   }
+//   return false; 
+// };
+// const numbers = [1, 2, 3, 4];
+// const hasEven = numbers.customSome(num => num % 2 === 0);
+// console.log(hasEven); 
+
+// customEvery()
+
+// function customEvery(array, callback) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (!callback(array[i], i, array)) {
+//       return false; 
+//     }
+//   }
+//   return true; 
+// }
+
+// const numbers = [2, 4, 6, 8];
+// const isEven = (num) => num % 2 === 0;
+// console.log(customEvery(numbers, isEven)); 
