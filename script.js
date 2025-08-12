@@ -805,3 +805,45 @@
 // const numbers = [2, 4, 6, 8];
 // const isEven = (num) => num % 2 === 0;
 // console.log(customEvery(numbers, isEven)); 
+
+
+// 10-normativ
+// 1-masala
+
+// const fn1 = {
+//   getProducts: function () {
+//     fetch("https://api.escuelajs.co/api/v1/products")
+//       .then(res => res.json())
+//       .then(data => {
+//         console.log("Products titles:");
+//         data.forEach(product => console.log(product.title));
+//       });
+//   }
+// };
+
+// fn1.getProducts();
+
+// 2-masala
+// const fn2 = {
+//   getUsers: function () {
+//     fetch("https://api.escuelajs.co/api/v1/users")
+//       .then(res => res.json())
+//       .then(data => {
+//         console.log("\nUsers names:");
+//         data.forEach(user => console.log(user.name));
+//       });
+//   }
+ // };
+// fn2.getUsers();
+// 3-masala
+// const fn3 = {
+//   getCategories: function () {
+//     fetch("https://api.escuelajs.co/api/v1/categories")
+//       .then(res => res.json())
+//       .then(data => {
+//         console.log("\nCategories names:");
+//         data.forEach(category => console.log(category.name));
+//       });
+//   }
+// }
+// fn3.getCategories();
