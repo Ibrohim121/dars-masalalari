@@ -847,3 +847,74 @@
 //   }
 // }
 // fn3.getCategories();
+//  const h1Element = document.querySelector('h1');
+//     const pElement = document.querySelector('p');
+//     const divElement = document.querySelector('div');
+//     const buttonElement = document.querySelector('button');
+
+//      console.log('H1:', h1Element);
+//     console.log('P:', pElement);
+//     console.log('DIV:', divElement);
+//     console.log('BUTTON:', buttonElement)                    
+
+// const ulElement = document.getElementById('myList')
+// const newLi = document.createElement('li')
+// newLi.textContent = 'item3';
+// ulElement.appendChild(newLi)
+
+// const remove = document.getElementById("myList")
+
+
+
+
+// 11-normativ 
+// 1-masala
+
+  document.getElementById("btn1").addEventListener("click", function() {
+    document.getElementById("box1").style.backgroundColor = "green";
+  });
+//   2-masala
+
+  const text = document.getElementById("text");
+
+  text.addEventListener("mouseover", function() {
+    text.style.color = "red";
+  });
+
+  text.addEventListener("mouseout", function() {
+    text.style.color = "black";
+  })
+
+//   3-masala
+
+
+  document.getElementById("btn2").addEventListener("click", function() {
+    document.getElementById("box2").classList.toggle("highlight");
+ })
+//   4-masala
+    
+  document.getElementById("toggleImg").addEventListener("click", function () {
+    const img = document.getElementById("myImg");
+    img.style.display = img.style.display === "none" ? "block" : "none";
+  });
+//   5-masala
+  document.getElementById("myInput").addEventListener("input", function () {
+    const input = this;
+    if (input.value.length < 5) {
+      input.style.border = "2px solid red";
+    } else {
+      input.style.border = "2px solid green";
+    }
+  });
+// 6-masala
+  function changeColor(color) {
+    document.getElementById("colorBox").style.backgroundColor = color;
+  }
+// 7-masala
+  const btn = document.getElementById("darkModeBtn");
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
+
+
+
