@@ -870,51 +870,63 @@
 // 11-normativ 
 // 1-masala
 
-  document.getElementById("btn1").addEventListener("click", function() {
-    document.getElementById("box1").style.backgroundColor = "green";
-  });
+  // document.getElementById("btn1").addEventListener("click", function() {
+  //   document.getElementById("box1").style.backgroundColor = "green";
+  // });
 //   2-masala
 
-  const text = document.getElementById("text");
+  // const text = document.getElementById("text");
 
-  text.addEventListener("mouseover", function() {
-    text.style.color = "red";
-  });
+  // text.addEventListener("mouseover", function() {
+  //   text.style.color = "red";
+  // });
 
-  text.addEventListener("mouseout", function() {
-    text.style.color = "black";
-  })
+  // text.addEventListener("mouseout", function() {
+  //   text.style.color = "black";
+  // })
 
 //   3-masala
 
 
-  document.getElementById("btn2").addEventListener("click", function() {
-    document.getElementById("box2").classList.toggle("highlight");
- })
+//   document.getElementById("btn2").addEventListener("click", function() {
+//     document.getElementById("box2").classList.toggle("highlight");
+//  })
 //   4-masala
     
-  document.getElementById("toggleImg").addEventListener("click", function () {
-    const img = document.getElementById("myImg");
-    img.style.display = img.style.display === "none" ? "block" : "none";
-  });
+  // document.getElementById("toggleImg").addEventListener("click", function () {
+  //   const img = document.getElementById("myImg");
+  //   img.style.display = img.style.display === "none" ? "block" : "none";
+  // });
 //   5-masala
-  document.getElementById("myInput").addEventListener("input", function () {
-    const input = this;
-    if (input.value.length < 5) {
-      input.style.border = "2px solid red";
-    } else {
-      input.style.border = "2px solid green";
-    }
-  });
+  // document.getElementById("myInput").addEventListener("input", function () {
+  //   const input = this;
+  //   if (input.value.length < 5) {
+  //     input.style.border = "2px solid red";
+  //   } else {
+  //     input.style.border = "2px solid green";
+  //   }
+  // });
 // 6-masala
-  function changeColor(color) {
-    document.getElementById("colorBox").style.backgroundColor = color;
-  }
+  // function changeColor(color) {
+  //   document.getElementById("colorBox").style.backgroundColor = color;
+  // }
 // 7-masala
-  const btn = document.getElementById("darkModeBtn");
-  btn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-  });
+  // const btn = document.getElementById("darkModeBtn");
+  // btn.addEventListener("click", function () {
+  //   document.body.classList.toggle("dark-mode");
+  // });
+
+// const input = document.getElementById("input")
+// const input1 = document.getElementById("input1")
+// const form = document.getElementById("form")
+
+// form.addEventListener("submit", function() {
+//  { console.log( "name : ", `${input.value}` );
+//  console.log( "surname :", `${input1.value}`);}
+ 
+  
+  
+// })
 
 
 

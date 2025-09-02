@@ -4,51 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Toast Notification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 9999;
+    }
+
+    .toast {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      background: #1f2937;
+      color: white;
+      padding: 16px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toast.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .toast .description {
+      font-size: 14px;
+      color: #d1d5db;
+    }
+
+    .toast .action-btn {
+      align-self: flex-end;
+      background: transparent;
+      border: none;
+      color: #60a5fa;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
-    <!-- 1-vazifa -->
-<button id="btn1">Rangni o'zgartir</button>
-<div id="box1" style="width: 200px; height: 100px; background: lightgray; margin-top: 10px;"></div>
 
+  <button onclick="showToast()">Show Toast</button>
 
-<!-- 2-vazifa -->
-<p id="text">Ushbu matnga sichqoncha olib boring.</p>
-<!-- 3-vazifa -->
-<style>
-  .highlight {
-    border: 2px solid blue;
-  }
-</style>
+  <div class="toast-container" id="toastContainer"></div>
 
-<button id="btn2">Class toggle</button>
-<div id="box2" style="width: 200px; height: 100px; background: lightgray; margin-top: 10px;"></div>
-<br>
-<!-- 4-vazifa -->
-<button id="toggleImg">Rasmni ko‘rsat/yashir</button><br><br>
-<img id="myImg" src="result-image.png" alt="Rasm" />
-<br>
-<!-- 5-vazifa -->
-<input type="text" id="myInput" placeholder="Yozing..." />
-<br>
-<!-- 6-vazifa -->
- <br>
-<button onclick="changeColor('red')">Qizil</button>
-<button onclick="changeColor('green')">Yashil</button>
-<button onclick="changeColor('blue')">Ko‘k</button>
+  <script>
+    function showToast() {
+      const container = document.getElementById("toastContainer");
 
-<div id="colorBox" style="width: 200px; height: 100px; background: gray; margin-top: 10px;"></div>
-<br>
+      const toast = document.createElement("div");
+      toast.classList.add("toast");
+      toast.setAttribute("role", "alert");
 
-<!-- 7-vazifa -->
-<button id="darkModeBtn">Dark Mode</button>
-<style>
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
-</style>
+      const title = document.createElement("div");
+      title.textContent = "Event has been created";
 
-    <script src="script.js"></script>
+      const description = document.createElement("div");
+      description.classList.add("description");
+      description.textContent = "Tuesday, September 02, 2025 at 15:26  PM";
+
+      const actionBtn = document.createElement("button");
+      actionBtn.classList.add("action-btn");
+      actionBtn.textContent = "Undo";
+      actionBtn.onclick = () => {
+        console.log("Undo");
+        hideToast(toast);
+      };
+
+      toast.appendChild(title);
+      toast.appendChild(description);
+      toast.appendChild(actionBtn);
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.add("visible");
+      });
+
+      setTimeout(() => {
+        hideToast(toast);
+      }, 4000);
+    }
+
+    function hideToast(toast) {
+      toast.classList.remove("visible");
+      toast.addEventListener("transitionend", () => {
+        toast.remove();
+      }, { once: true });
+    }
+  </script>
 </body>
 </html>
 
