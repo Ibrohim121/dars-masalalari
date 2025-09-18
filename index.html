@@ -10,7 +10,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Custom Toast Notification</title>
+  <title>document</title>
   <!-- <style>
     body {
       font-family: Arial, sans-serif;
@@ -72,7 +72,7 @@
       padding: 0;
     }
   </style> -->
-  <style>
+  <!-- <style>
     .accordion {
       width: 100%;
       border: 1px solid #ccc;
@@ -96,7 +96,19 @@
     .accordion-content.active {
       display: block;
     }
+  </style>-->
+  <style>
+    #source, #target {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
   </style>
+
+<!--
 </head>
 <body>
 
@@ -133,7 +145,7 @@
       if (!isActive) content.classList.add('active');
     });
   });
-</script>
+</script> -->
 
 
 
@@ -185,6 +197,47 @@
       }, { once: true });
     }
   </script> -->
+
+<!-- 
+exam 
+1-masala -->
+ 
+<!-- <p id="salom">hello!</p>
+<button id="btn" >click</button> -->
+
+<!-- 2-masala -->
+
+<!-- <ul id="list">
+  <li>salom</li>
+  <li>salom</li>
+  <li>salom</li>
+  <li>salom</li>
+  </ul>
+3-masala -->
+<!-- <textarea name="nmadr yoz" id="text"></textarea>
+
+<p id="p"></p> -->
+<!-- 
+4-masala -->
+
+<!-- <button class="btn" >+1</button>
+<button class="btn">+1</button>
+<button class="btn">+1</button>
+<button class="btn">+1</button>
+<p id="p1"></p> -->
+
+
+<div id="source" ondragstart="drag(event)" draggable="true">
+  <div id="product1" data-name="Product A" draggable="true" ondragstart="drag(event)">Product A</div>
+</div>
+
+<div id="target" ondrop="drop(event)" ondragover="allowDrop(event)">
+  Drop Here
+</div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
 

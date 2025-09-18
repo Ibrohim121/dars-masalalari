@@ -930,3 +930,71 @@
 
 
 
+
+// exam 
+// 1-masala
+
+// const p2 = document.getElementById("salom")
+// const btn1 = document.getElementById("btn")
+// btn1.addEventListener("click", () => {
+//   p2.textContent = "salom!"
+  
+// })
+
+// // 2-masala
+// const input = prompt("li iciga nmadr qowish")
+// const list = document.getElementById("list")
+// const newLi = document.createElement("li")
+//   newLi.textContent = input
+//   list.appendChild(newLi)
+
+
+// // 3-masala
+// const length = document.getElementById("length")
+// const bos = document.getElementById("bos")
+// const word =document.getElementById("word")
+// const text = document.getElementById("text")
+// const p =document.getElementById("p")
+// text.addEventListener("input", ()=> {
+  
+//   console.log(text.value.length);
+//   p.textContent =  text.value.length  
+  
+// })
+
+
+
+
+// //  4-masala
+// const p1 =document.getElementById("p1")
+// const btn = document.querySelectorAll("button")
+
+// btn.addEventListener("click", ()=> {
+//     p1.textContent =  btn.click 
+// })
+
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  const product = document.getElementById(data);
+  const productName = product.getAttribute("data-name");
+  
+  ev.target.appendChild(product);
+  
+  alert(`Qoshilgan product: ${productName}`);
+}
+
+
+
+
+
+
