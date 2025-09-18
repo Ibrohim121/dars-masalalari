@@ -226,15 +226,114 @@ exam
 <button class="btn">+1</button>
 <p id="p1"></p> -->
 
-
+<!-- 
 <div id="source" ondragstart="drag(event)" draggable="true">
   <div id="product1" data-name="Product A" draggable="true" ondragstart="drag(event)">Product A</div>
 </div>
 
 <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)">
   Drop Here
-</div>
+</div> -->
 
+<button onclick="increment()">Bos!</button>
+<p id="counter">0</p>
+
+<script>
+  let count = localStorage.getItem("clicks") || 0;
+  document.getElementById("counter").innerText = count;
+
+  function increment() {
+    count++;
+    document.getElementById("counter").innerText = count;
+    localStorage.setItem("clicks", count);
+  }
+</script>
+
+
+<input id="nameInput" type="text">
+<button onclick="saveName()">Saqlash</button>
+
+<script>
+  document.getElementById("nameInput").value = localStorage.getItem("savedName") || '';
+
+  function saveName() {
+    const name = document.getElementById("nameInput").value;
+    localStorage.setItem("savedName", name);
+  }
+</script>
+
+
+<form onsubmit="return handleSubmit()">
+  <input id="name" type="text" placeholder="Ism">
+  <input id="email" type="text" placeholder="Email">
+  <button type="submit">Yuborish</button>
+</form>
+<p id="message"></p>
+
+<script>
+  function handleSubmit() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message");
+
+    if (!name || !email) {
+      message.innerText = "Iltimos, barcha maydonlarni to‘ldiring!";
+      return false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      message.innerText = "Email noto‘g‘ri!";
+      return false;
+    }
+
+    message.innerText = "Muvaffaqiyatli yuborildi!";
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    return false;
+  }
+</script>
+
+
+<div id="box" style="width:300px; height:300px; border:1px solid black;" 
+     onmousemove="trackMouse(event)" 
+     onmouseleave="outBox()"> 
+</div>
+<p id="coords"></p>
+
+<script>
+  function trackMouse(e) {
+    document.getElementById("coords").innerText = `X: ${e.offsetX}, Y: ${e.offsetY}`;
+  }
+
+  function outBox() {
+    document.getElementById("coords").innerText = "Tashqaridaman";
+  }
+</script>
+
+
+
+
+
+<button onclick="setLanguage('uz')">O‘zbekcha</button>
+<button onclick="setLanguage('en')">Inglizcha</button>
+<p id="greeting"></p>
+
+<script>
+  function setLanguage(lang) {
+    localStorage.setItem("language", lang);
+    renderText(lang);
+  }
+
+  function renderText(lang) {
+    const greeting = document.getElementById("greeting");
+    greeting.innerText = lang === 'uz' ? "Salom, xush kelibsiz!" : "Hello, welcome!";
+  }
+
+  // Sahifa yuklanganda
+  const savedLang = localStorage.getItem("language") || "uz";
+  renderText(savedLang);
+</script>
 
 
 <script src="script.js"></script>
