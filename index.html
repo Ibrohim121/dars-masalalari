@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>document</title>
    <script src="https://cdn.tailwindcss.com"></script>
-  <!-- <style>
+  <style>
     body {
       font-family: Arial, sans-serif;
       padding: 50px;
@@ -72,8 +72,8 @@
       cursor: pointer;
       padding: 0;
     }
-  </style> -->
-  <!-- <style>
+  </style> 
+   <style>
     .accordion {
       width: 100%;
       border: 1px solid #ccc;
@@ -97,7 +97,7 @@
     .accordion-content.active {
       display: block;
     }
-  </style>-->
+  </style>
   <style>
     #source, #target {
   width: 200px;
@@ -227,16 +227,16 @@ exam
 <button class="btn">+1</button>
 <p id="p1"></p> -->
 
-<!-- 
+
 <div id="source" ondragstart="drag(event)" draggable="true">
   <div id="product1" data-name="Product A" draggable="true" ondragstart="drag(event)">Product A</div>
 </div>
 
 <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)">
   Drop Here
-</div> -->
+</div> 
 
-<!-- <button onclick="increment()">Bos!</button>
+<button onclick="increment()">Bos!</button>
 <p id="counter">0</p>
 
 <script>
@@ -250,8 +250,9 @@ exam
   }
 </script>
 
+<br>
 
-<input id="nameInput" type="text">
+<input id="nameInput" class="border 1px" type="text">
 <button onclick="saveName()">Saqlash</button>
 
 <script>
@@ -263,10 +264,11 @@ exam
   }
 </script>
 
+<br>
 
 <form onsubmit="return handleSubmit()">
-  <input id="name" type="text" placeholder="Ism">
-  <input id="email" type="text" placeholder="Email">
+  <input id="name" type="text" class="border 1px" placeholder="Ism">
+  <input id="email" type="text" class="border 1px " placeholder="Email">
   <button type="submit">Yuborish</button>
 </form>
 <p id="message"></p>
@@ -278,13 +280,13 @@ exam
     const message = document.getElementById("message");
 
     if (!name || !email) {
-      message.innerText = "Iltimos, barcha maydonlarni to‘ldiring!";
+      message.innerText = "Iltimos, barcha maydonlarni toldiring!";
       return false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      message.innerText = "Email noto‘g‘ri!";
+      message.innerText = "Email notogri!";
       return false;
     }
 
@@ -316,8 +318,8 @@ exam
 
 
 
-<button onclick="setLanguage('uz')">O‘zbekcha</button>
-<button onclick="setLanguage('en')">Inglizcha</button>
+<button onclick="setLanguage('uz')" class="border-black" >Ozbekcha</button>
+<button onclick="setLanguage('en')" class="border 2px" >Inglizcha</button>
 <p id="greeting"></p>
 
 <script>
@@ -334,15 +336,15 @@ exam
   // Sahifa yuklanganda
   const savedLang = localStorage.getItem("language") || "uz";
   renderText(savedLang);
-</script> -->
+</script>
 
 
 
-<body class="bg-gray-100 p-10">
+<!-- <body class="bg-gray-100 p-10">
 
   <h1 class="text-2xl font-bold mb-6"> Productlar</h1>
   <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-    <!-- Product cards shu yerga joylanadi -->
+    Product cards shu yerga joylanadi
   </div>
 
   <script>
@@ -376,7 +378,7 @@ exam
     }
 
     fetchProducts();
-  </script>
+  </script> -->
 
 <script src="script.js"></script>
 </body>
